@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CustomersComponent } from './home/customers/customers.component';
 import { ContractorsComponent } from './home/contractors/contractors.component';
 import { AuthComponent } from './auth/auth.component';
-import { YourGuardGuard } from './your-guard.guard';
+import { YourGuardGuard } from './auth/your-auth.guard';
 
 const routes: Routes = [
     {   path: 'home',
