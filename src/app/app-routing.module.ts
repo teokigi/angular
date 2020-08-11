@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CustomersComponent } from './home/customers/customers.component';
 import { ContractorsComponent } from './home/contractors/contractors.component';
 import { AuthComponent } from './auth/auth.component';
+import { YourGuardGuard } from './your-guard.guard';
 
 const routes: Routes = [
     {   path: 'home',
@@ -14,6 +15,7 @@ const routes: Routes = [
         ],
     },
     { path: 'auth', component: AuthComponent},
+    { path: 'home', component: HomeComponent, canActivate:[YourGuardGuard]}
     { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
