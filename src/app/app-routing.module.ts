@@ -10,12 +10,11 @@ const routes: Routes = [
     {   path: 'home',
         component: HomeComponent,
         children:[
-            { path: 'home/customers', component: CustomersComponent},
-            { path: 'home/contractors', component: ContractorsComponent},
+            { path: 'home/customers', component: CustomersComponent, canActivate:[YourGuardGuard],},
+            { path: 'home/contractors', component: ContractorsComponent, canActivate:[YourGuardGuard],},
         ],
     },
     { path: 'auth', component: AuthComponent},
-    { path: 'home', component: HomeComponent, canActivate:[YourGuardGuard]}
     { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
