@@ -6,9 +6,13 @@ import { ContractorsComponent } from './home/contractors/contractors.component';
 import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent},
-    { path: 'home/customers', component: CustomersComponent},
-    { path: 'home/contractors', component: ContractorsComponent},
+    {   path: 'home',
+        component: HomeComponent,
+        children:[
+            { path: 'home/customers', component: CustomersComponent},
+            { path: 'home/contractors', component: ContractorsComponent},
+        ],
+    },
     { path: 'auth', component: AuthComponent},
     { path: '', redirectTo: '/home-component', pathMatch: 'full'},
 ];
