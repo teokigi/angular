@@ -15,7 +15,7 @@
             <h2>No Claims</h2>
         </td>
     </tr>
-    <tr *ngFor="let customer of customers | async">
+    <tr *ngFor="let customer of listData | async">
         <td>
             Name:{{customer.first_name}} {{customer.last_name}}
         </td>
