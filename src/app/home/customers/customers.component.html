@@ -1,1 +1,19 @@
-<p>customers works!</p>
+<p>customers Listing</p>
+
+<div *ngFor="let customer of customers">
+    <h3>
+        Name:{{customers.first_name}} {{customers.last_name}}
+    </h3>
+    <span>
+        Car: {{customers.car}}
+    </span>
+    <span>
+        Gender: {{customers.gender}}
+    </span>
+    <span>
+        NoClaims: {{customers.no_claims}
+    </span>
+</div>
+
+
+[{"id":1,"first_name":"Anderson","last_name":"Laurence","car":"Aston Martin","gender":"Male","no_claims":true},
