@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CustomerService } from '../customer.service';
+import customerData from '../../../assets/customer_data.json';
 
 @Component({
   selector: 'app-customers',
@@ -11,12 +11,13 @@ import { CustomerService } from '../customer.service';
 export class CustomersComponent implements OnInit {
     listData;
 
-  constructor(
-      private customerService: CustomerService,
-  ) { }
+  constructor() {
+      console.log('reading local json files');
+  console.log(customerData); 
+}
 
   ngOnInit() {
-      this.listData = this.customerService.getCustomers();
+      this.listData = customerData;
   }
 
 }
