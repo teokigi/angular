@@ -1,16 +1,33 @@
 <p>customers Listing</p>
 
-<div *ngFor="let customer of customers">
-    <h3>
-        Name:{{customers.first_name}} {{customers.last_name}}
-    </h3>
-    <span>
-        Car: {{customers.car}}
-    </span>
-    <span>
-        Gender: {{customers.gender}}
-    </span>
-    <span>
-        NoClaims: {{customers.no_claims}
-    </span>
-</div>
+<table>
+    <tr>
+        <td>
+            <h2>Name</h2>
+        </td>
+        <td>
+            <h2>Car</h2>
+        </td>
+        <td>
+            <h2>gender</h2>
+        </td>
+        <td>
+            <h2>No Claims</h2>
+        </td>
+    </tr>
+    <tr *ngFor="let customer of customers | async">
+        <td>
+            Name:{{customer.first_name}} {{customer.last_name}}
+        </td>
+        <td>
+            Car: {{customer.car}}
+        </td>
+        <td>
+            Gender: {{customer.gender}}
+        </td>
+        <td>
+            NoClaims: {{customer.no_claims}
+        </td>
+    </tr>
+
+</table>
