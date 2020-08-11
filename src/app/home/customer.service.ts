@@ -11,7 +11,7 @@ export class CustomerService {
   ) { }
 
   getCustomers(){
-      return this.http.get('/assets/shipping.json');
+      return this.http.get('../assets/customer_data.json');
   }
 
 }
