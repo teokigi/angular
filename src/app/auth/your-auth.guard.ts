@@ -1,14 +1,30 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { CanLoad, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
-export class YourGuardGuard implements CanActivate {
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): boolean {
-    return false;
-  }
+export class YourGuardGuard implements CanLoad, CanActivate {
+    
+    constructor(private router:Router){
+
+    }
+    
+    canLoad(route: Route): boolean{
+        const url: string = route.path;
+        console.log('Url:' + url)
+
+        return false;
+    }
+    
+    canActivate(
+        next: ActivatedRouteSnapshot,
+        state: RouterStateSnapshot
+    ): boolean
+        {
+        return false;
+        }
+  
+    
   
 }

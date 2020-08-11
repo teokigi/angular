@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeModule } from './home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { ContractorsComponent } from './home/contractors/contractors.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
