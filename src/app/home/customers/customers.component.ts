@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 import { CustomerService } from '../customer.service';
 
@@ -8,6 +7,7 @@ import { CustomerService } from '../customer.service';
   templateUrl: './customers.component.html',
   styleUrls: ['./customers.component.scss']
 })
+
 export class CustomersComponent implements OnInit {
     customers;
 
