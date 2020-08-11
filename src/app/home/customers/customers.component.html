@@ -1,33 +1,6 @@
 <h1>customers Listing</h1>
-
-<table>
-    <tr>
-        <td>
-            <h2>Name</h2>
-        </td>
-        <td>
-            <h2>Car</h2>
-        </td>
-        <td>
-            <h2>gender</h2>
-        </td>
-        <td>
-            <h2>No Claims</h2>
-        </td>
-    </tr>
-    <tr *ngFor="let customer of listData | async">
-        <td>
-            {{customer.first_name}} {{customer.last_name}}
-        </td>
-        <td>
-            {{customer.car}}
-        </td>
-        <td>
-            {{customer.gender}}
-        </td>
-        <td>
-            {{customer.no_claims}}
-        </td>
-    </tr>
-
-</table>
+<li>
+    <ul *ngFor="let customer of listData | async">
+        {{customer.first_name}} {{customer.last_name}}
+    </ul>
+</li>
