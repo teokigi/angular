@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { CustomerService } from '../customer.service';
 
 @Component({
   selector: 'app-customers',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customers.component.scss']
 })
 export class CustomersComponent implements OnInit {
+    customers;
 
-  constructor() { }
+  constructor(
+      private customerService: CustomerService,
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+      this.customers = this.customerService.getCustomers();
   }
 
 }
