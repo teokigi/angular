@@ -17,16 +17,16 @@
     </tr>
     <tr *ngFor="let customer of listData | async">
         <td>
-            Name:{{customer.first_name}} {{customer.last_name}}
+            {{customer.first_name}} {{customer.last_name}}
         </td>
         <td>
-            Car: {{customer.car}}
+            {{customer.car}}
         </td>
         <td>
-            Gender: {{customer.gender}}
+            {{customer.gender}}
         </td>
         <td>
-            NoClaims: {{customer.no_claims}
+            {{customer.no_claims}}
         </td>
     </tr>
 
