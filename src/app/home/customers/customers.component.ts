@@ -11,13 +11,13 @@ import customerData from '../../../assets/customer_data.json';
 export class CustomersComponent implements OnInit {
     listData;
 
-  constructor() {
-      console.log('reading local json files');
-  console.log(customerData); 
-}
+    constructor() {
+        console.log('reading local json files');
+        console.log(customerData); 
+    }
 
-  ngOnInit() {
-      this.listData = customerData;
-  }
+    ngOnInit() {
+        this.listData = customerData;
+    }
 
 }
