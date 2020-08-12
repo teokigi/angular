@@ -8,13 +8,14 @@ import { YourGuardGuard } from '../auth/your-auth.guard';
 
 
 const routes: Routes = [
-    {   path: '',
+    {   path: 'home',
         component: HomeComponent,
         children:[
             { path: 'home/customers', component: CustomersComponent, canActivate:[YourGuardGuard],},
             { path: 'home/contractors', component: ContractorsComponent, canActivate:[YourGuardGuard],},
         ],
-    }
+    },
+    { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
