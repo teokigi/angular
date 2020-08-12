@@ -5,7 +5,6 @@ import { HomeComponent } from './home.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ContractorsComponent } from './contractors/contractors.component';
 
-
 @NgModule({
   declarations: [
     HomeComponent,

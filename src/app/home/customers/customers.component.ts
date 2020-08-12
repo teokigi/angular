@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import customerData from '../../../assets/customer_data.json';
+import * as customerData from '../../../assets/customer_data.json';
 
 @Component({
   selector: 'app-customers',
