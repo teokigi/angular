@@ -15,7 +15,7 @@ const routes: Routes = [
             { path: 'home/contractors', component: ContractorsComponent, canActivate:[YourGuardGuard],},
         ],
     },
-    { path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];
 
 @NgModule({

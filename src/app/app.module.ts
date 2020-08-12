@@ -27,6 +27,7 @@ registerLocaleData(uk);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    
   ],
   providers: [YourGuardGuard, { provide: NZ_I18N, useValue: uk_UA }],
   bootstrap: [AppComponent]

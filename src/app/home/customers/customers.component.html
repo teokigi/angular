@@ -4,7 +4,7 @@
     </li>
 </ul> -->
 
-<nz-table #basicTable [nzData]="listData">
+<nz-table #sortTable [nzData]="listData">
     <thead>
         <tr>
             <th>
@@ -22,7 +22,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let customer of basicTable.data">
+        <tr *ngFor="let customer of sortTable.data">
             <td>
                 {{customer.first_name}} {{customer.last_name}}
             </td>

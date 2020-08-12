@@ -8,7 +8,7 @@ const routes: Routes = [
         loadChildren: './home/home.module#HomeModule',
         canLoad:[ YourGuardGuard ]    
     },
-    { path: '', redirectTo:'/home', pathMatch:'full'}
+    { path: '', redirectTo:'home', pathMatch:'full'}
 ];
 
 @NgModule({

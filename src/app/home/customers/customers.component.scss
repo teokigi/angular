@@ -18,10 +18,10 @@ thead.any-table-thead {
     background-color:#c50e0e;
 }
 
-#heading-logo{
-    width: 300px;
-    height:100%;
-    background-color:white;
-    // background-image:url('../../../assets/afs.png');
-    border-style:solid;
-}
+.logo {
+    width: 120px;
+    height: 31px;
+    background-image:url('../../../assets/afs.png');
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
