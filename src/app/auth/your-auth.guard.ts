@@ -14,7 +14,7 @@ export class YourGuardGuard implements CanLoad, CanActivate {
         const url: string = route.path;
         console.log('Url:' + url)
 
-        return false;
+        return true;
     }
     
     canActivate(
@@ -22,7 +22,7 @@ export class YourGuardGuard implements CanLoad, CanActivate {
         state: RouterStateSnapshot
     ): boolean
         {
-        return false;
+        return true;
         }
   
     
