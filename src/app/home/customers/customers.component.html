@@ -4,36 +4,40 @@
     </li>
 </ul> -->
 
-<table>
-    <tr>
-        <td>
-           <h2>Name</h2>
-        </td>
-        <td>
-            <h2>Gender</h2>
-        </td>
-        <td>
-            <h2>Car</h2>
-        </td>
-        <td>
-            <h2>No Claims</h2>
-        </td>
-    </tr>
-    <tr *ngFor="let customer of listData">
-        <td>
-            {{customer.first_name}} {{customer.last_name}}
-        </td>
-        <td>
-            {{customer.gender}}
-        </td>
-        <td *ngIf="customer.car">
-            {{customer.car}}
-        </td>
-        <td *ngIf="!customer.car">
-            N/A
-        </td>
-        <td>
-            {{customer.no_claims}}
-        </td>
-    </tr>
-</table>
+<nz-table #basicTable [nzData]="listData">
+    <thead>
+        <tr>
+            <th>
+            Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Car
+            </th>
+            <th>
+                No Claims
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of basicTable.data">
+            <td>
+                {{customer.first_name}} {{customer.last_name}}
+            </td>
+            <td>
+                {{customer.gender}}
+            </td>
+            <td *ngIf="customer.car">
+                {{customer.car}}
+            </td>
+            <td *ngIf="!customer.car">
+                N/A
+            </td>
+            <td>
+                {{customer.no_claims}}
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

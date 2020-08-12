@@ -7,6 +7,7 @@ import { ContractorsComponent } from './contractors/contractors.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzListModule } from 'ng-zorro-antd/list';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
     NzLayoutModule,
     NzMenuModule,
     NzListModule,
+    NzTableModule,
   ]
 })
 export class HomeModule { }
