@@ -1,17 +1,28 @@
-<nz-header>
-    <nav>
-        <a routerLink="home">Home</a>
-        ||
-        <a routerLink="home/customers">customers</a>
-        ||
-        <a routerLink="home/contractors">contractors</a>
-    </nav> 
-</nz-header>
+<nz-layout>
+    <nz-header>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+            <li nz-menu-item>
+                <a routerLink="home">Home</a>
+            </li>
+            
+            <li nz-menu-item>
+                <a routerLink="home/customers">customers</a>
+            </li>
+            
+            <li nz-menu-item>
+                <a routerLink="home/contractors">contractors</a>
+            </li>
+        </ul> 
+    </nz-header>
 
-<nz-content>
-    <router-outlet></router-outlet>
-</nz-content>
+    <nz-content>
+        <div class="inner-content">
+            <router-outlet></router-outlet>
+        </div>
+        
+    </nz-content>
 
-<nz-footer>
-    Teokigi
-</nz-footer>
+    <nz-footer>
+        Teokigi
+    </nz-footer>
+</nz-layout>
