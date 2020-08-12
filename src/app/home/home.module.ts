@@ -4,6 +4,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ContractorsComponent } from './contractors/contractors.component';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ContractorsComponent } from './contractors/contractors.component';
   imports: [
     HomeRoutingModule,
     CommonModule,
+    NzLayoutModule,
   ]
 })
 export class HomeModule { }

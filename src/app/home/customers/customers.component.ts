@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import customerData from '../../../assets/customer_data.json';
 
+
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.html',
