@@ -13,6 +13,8 @@ import { uk_UA } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import uk from '@angular/common/locales/uk';
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import Amplify from 'aws-amplify';
+import awsconfig from '../aws-exports';
 registerLocaleData(uk);
 
 @NgModule({
@@ -28,7 +30,8 @@ registerLocaleData(uk);
     HttpClientModule,
     BrowserAnimationsModule,
     AmplifyUIAngularModule,
-    
+    Amplify,
+    awsconfig,    
   ],
   providers: [YourGuardGuard, { provide: NZ_I18N, useValue: uk_UA }],
   bootstrap: [AppComponent]
