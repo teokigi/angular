@@ -4,6 +4,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ContractorsComponent } from './contractors/contractors.component';
+import { AuthComponent } from '../auth/auth.component';
 import { NzAffixModule } from 'ng-zorro-antd/affix';
 import { NzAlertModule } from 'ng-zorro-antd/alert';
 import { NzAnchorModule } from 'ng-zorro-antd/anchor';
@@ -76,6 +77,7 @@ import { NzResizableModule } from 'ng-zorro-antd/resizable';
     HomeComponent,
     CustomersComponent,
     ContractorsComponent,
+    AuthComponent,
   ],
   imports: [
     HomeRoutingModule,

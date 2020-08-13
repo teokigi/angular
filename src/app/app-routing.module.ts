@@ -4,11 +4,11 @@ import { YourGuardGuard } from './auth/your-auth.guard';
 
 const routes: Routes = [
     {   
-        path: '',
+        path: 'home',
         loadChildren: './home/home.module#HomeModule',
         canLoad:[ YourGuardGuard ]    
     },
-    { path: '', redirectTo:'home', pathMatch:'full'}
+    { path: '', redirectTo:'/home', pathMatch:'full'}
 ];
 
 @NgModule({
