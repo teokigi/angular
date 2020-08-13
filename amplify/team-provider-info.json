@@ -10,6 +10,11 @@
             "StackName": "amplify-afsjwdassessment-dev-155432",
             "StackId": "arn:aws:cloudformation:eu-west-1:484999871324:stack/amplify-afsjwdassessment-dev-155432/e7bfe840-dd74-11ea-be6b-02c4fae2d862",
             "AmplifyAppId": "d11986mybvsoxw"
+        },
+        "categories": {
+            "auth": {
+                "afsStore": {}
+            }
         }
     }
 }
