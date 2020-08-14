@@ -55,7 +55,13 @@ export class CustomersComponent implements OnInit {
         },
         
         {
-            name: 'No Claims'
+            name: 'No Claims',
+            filterMultiple: false,
+            listOfFilter:[
+                {text: 'no claims', value: true},
+                
+            ],
+            filterFn: (no_claims: string, item: DataItem) => item.no_claims
         }
     ]
     
