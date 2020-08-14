@@ -4,27 +4,27 @@
     </li>
 </ul> -->
 
-<nz-table #sortTable [nzData]="listData">
+<nz-table #sortTable [nzData]="listOfData">
     <thead>
         <tr>
-            <th>
-            Name
-            </th>
-            <th>
-                Gender
-            </th>
-            <th>
-                Car
-            </th>
-            <th>
-                No Claims
+            <th *ngFor="let column of listOfColumns"
+                [nzSortOrder]="column.sortOrder"
+                [nzSortFn]="column.sortFn"
+                [nzSortDirections]="column.sortDirections"
+                [nzFilterMultiple]="column.filterMultiple"
+                [nzFilters]="column.listOfFilter"
+                [nzFilterFn]="column.filterFn">
+                {{column.name}}
             </th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let customer of sortTable.data">
             <td>
-                {{customer.first_name}} {{customer.last_name}}
+                {{customer.first_name}}
+            </td>
+            <td>
+                {{customer.last_name}}
             </td>
             <td>
                 {{customer.gender}}

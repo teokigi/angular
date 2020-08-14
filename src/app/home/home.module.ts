@@ -71,6 +71,7 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzResizableModule } from 'ng-zorro-antd/resizable';
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -147,7 +148,9 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
     NzUploadModule,
     NzWaveModule,
     NzResizableModule,
-    AmplifyUIAngularModule
+    AmplifyUIAngularModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class HomeModule { }
