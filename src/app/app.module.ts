@@ -11,12 +11,13 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { uk_UA } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import uk from '@angular/common/locales/uk';
+
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 import Amplify from 'aws-amplify';
 import awsconfig from '../aws-exports';
+Amplify.configure(awsconfig);
 registerLocaleData(uk);
 
-Amplify.configure(awsconfig);
 
 @NgModule({
   declarations: [
@@ -24,7 +25,6 @@ Amplify.configure(awsconfig);
   ],
 
   imports: [
-    Amplify,
     BrowserModule,
     AppRoutingModule,
     HomeModule,
