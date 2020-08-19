@@ -6,8 +6,8 @@
 
 <div *ngIf="todoList">
     <ul>
-    <li *ngFor="let list of todoList.data.listTodos.items">
-        {{ list.name }}, {{ list.description }}
+    <li *ngFor="let list of todoList.data.listTodos.items; let indexOfelement=index;">
+        {{indexOfelement}}: {{ list.name }}, {{ list.description }}
     </li>
     </ul>
 </div>
